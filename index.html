@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Car Parking Uzbekistan</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Car Simulator — Open World</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #0a0a0f; color: #eee; }
+    header { padding: 2rem 1rem; text-align: center; background: linear-gradient(180deg, #111 0%, #0a0a0f 100%); }
+    h1 { font-size: clamp(1.8rem, 5vw, 3.2rem); margin-bottom: 0.5rem; }
+    .tag { color: #888; font-size: 0.95rem; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+    .card { background: #16161f; border: 1px solid #2a2a35; border-radius: 12px; padding: 1.2rem; }
+    .card h3 { margin-bottom: 0.4rem; color: #fff; }
+    .card p { color: #aaa; font-size: 0.9rem; line-height: 1.4; }
+    .cta { display: inline-block; margin-top: 1.5rem; padding: 0.8rem 1.6rem; background: #e11; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    footer { text-align: center; padding: 2rem 1rem; color: #555; font-size: 0.85rem; }
+    @media (max-width: 600px) {
+      header { padding: 1.5rem 0.8rem; }
+      .container { padding: 1rem; }
+    }
+  </style>
 </head>
 <body>
-  <div id="ui">
-    <h1>Car Parking — O'zbekiston</h1>
-    <div id="info">Xarita: Quruq yer + Yo'llar (2-bosqich)</div>
-    <div id="controls">
-      <button id="btn-reset">Qayta chizish</button>
-      <span id="coords">X: 0 | Y: 0</span>
+  <header>
+    <h1>Ultra Car Simulator</h1>
+    <p class="tag">GTA 6 dan 4 barobar katta ochiq dunyo · Unity 6 HDRP · Real fizika</p>
+  </header>
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <h3>Real Vehicle Physics</h3>
+        <p>Drivetrain, turbo, suspension, brake fade, damage deformation.</p>
+      </div>
+      <div class="card">
+        <h3>50-Mission Campaign</h3>
+        <p>Street, Touge, Off-road, Logistics, Grand Finale.</p>
+      </div>
+      <div class="card">
+        <h3>Mechanic Simulator</h3>
+        <p>Bolt-by-bolt engine, dyno, barn finds, restoration.</p>
+      </div>
+      <div class="card">
+        <h3>Multiplayer & Economy</h3>
+        <p>Auction house, clans, anti-cheat, car token ledger.</p>
+      </div>
     </div>
+    <a class="cta" href="https://github.com/abduraxmonovbobir191-creator/car-parking-game-" target="_blank">GitHub — car-parking-game-</a>
   </div>
-
-  <canvas id="gameCanvas"></canvas>
-
-  <script src="js/map.js"></script>
-  <script src="js/main.js"></script>
+  <footer>
+    Mobile + PC responsive · car-parking-web
+  </footer>
 </body>
 </html>
